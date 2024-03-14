@@ -15,8 +15,10 @@ public class PositiveTests extends BaseTest {
         loginPage.maximizeWindow();
 
         // Enter username
+        loginPage.inputUserName("tomsmith");
 
         // Enter password
+        loginPage.inputPassword("SuperSecretPassword!");
 
         // Click login button
 

@@ -14,8 +14,8 @@ public class BasePage {
 
     public BasePage(WebDriver driver){
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         PageFactory.initElements(driver, this);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     // Wait for an element to be visible

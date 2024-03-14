@@ -3,6 +3,7 @@ package com.herokuapp.theinternet.utils;
 import com.herokuapp.theinternet.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -19,7 +20,7 @@ public class BaseTest {
         setDriver();
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void close(){
         this.driver.close();
     }

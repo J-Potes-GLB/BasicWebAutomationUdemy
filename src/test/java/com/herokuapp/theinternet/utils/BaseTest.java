@@ -3,6 +3,7 @@ package com.herokuapp.theinternet.utils;
 import com.herokuapp.theinternet.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
@@ -17,6 +18,11 @@ public class BaseTest {
     public void setup(){
         setDriver();
         System.out.println("Set up of driver");
+    }
+
+    @AfterMethod
+    public void close(){
+        this.driver.close();
     }
 
     public LoginPage getFirstPage(){

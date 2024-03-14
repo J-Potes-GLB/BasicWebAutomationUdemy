@@ -17,7 +17,6 @@ public class BaseTest {
     @BeforeMethod
     public void setup(){
         setDriver();
-        System.out.println("Set up of driver");
     }
 
     @AfterMethod

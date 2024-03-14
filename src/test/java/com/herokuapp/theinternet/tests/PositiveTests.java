@@ -8,7 +8,23 @@ import org.testng.annotations.Test;
 public class PositiveTests extends BaseTest {
     @Test
     public void loginTest(){
+        // Open Login Page
         LoginPage loginPage = getFirstPage();
-        Assert.assertTrue(true);
+
+        // Maximize window
+        loginPage.maximizeWindow();
+
+        // Enter username
+
+        // Enter password
+
+        // Click login button
+
+        // Verifications
+        // New url
+
+        // Log out button is visible
+
+        // Successful login message
     }
 }
